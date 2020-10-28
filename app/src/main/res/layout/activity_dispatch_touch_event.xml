@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lywow.mytest.dispatchTouchEvent.DispatchTouchEventViewGroup
+        android:id="@+id/rl_lv1_dispatch_touch_event"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#14df52">
+
+        <com.lywow.mytest.dispatchTouchEvent.DispatchTouchEventViewGroup
+            android:id="@+id/rl_lv2_dispatch_touch_event"
+            android:layout_width="250dp"
+            android:layout_height="500dp"
+            android:layout_centerInParent="true"
+            android:background="#ed44ed">
+
+            <com.lywow.mytest.dispatchTouchEvent.DispatchTouchEventView
+                android:id="@+id/btn_dispatch_touch_event"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:background="#FFFFFF"/>
+
+        </com.lywow.mytest.dispatchTouchEvent.DispatchTouchEventViewGroup>
+
+    </com.lywow.mytest.dispatchTouchEvent.DispatchTouchEventViewGroup>
+
+</RelativeLayout>
