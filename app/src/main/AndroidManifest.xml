@@ -17,8 +17,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".dispatchTouchEvent.DispatchTouchEventActivity">
-        </activity>
+        <activity android:name=".dispatchTouchEvent.DispatchTouchEventActivity"/>
+        <activity android:name=".testLifeActivity.TestLifeActivity"/>
+
+        <service android:name=".serviceTest.BindTestService" />
     </application>
 
 </manifest>

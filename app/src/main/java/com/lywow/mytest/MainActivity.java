@@ -10,6 +10,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import com.lywow.mytest.dispatchTouchEvent.DispatchTouchEventActivity;
+import com.lywow.mytest.testLifeActivity.TestLifeActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void initView() {
         findViewById(R.id.tv_dispatch_touch_event).setOnClickListener(this);
+        findViewById(R.id.tv_test_life_activity).setOnClickListener(this);
     }
 
     @Override
@@ -32,6 +34,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
             case R.id.tv_dispatch_touch_event:
                 startActivity(new Intent(this, DispatchTouchEventActivity.class));
+                break;
+            case R.id.tv_test_life_activity:
+                startActivity(new Intent(this, TestLifeActivity.class));
                 break;
             default:
                 break;

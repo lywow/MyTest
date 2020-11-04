@@ -22,6 +22,7 @@ public class DispatchTouchEventActivity extends Activity {
     private DispatchTouchEventViewGroup layoutLv1;
     private DispatchTouchEventViewGroup layoutLv2;
     private DispatchTouchEventView button;
+    private DispatchTouchEventView button2;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -35,9 +36,11 @@ public class DispatchTouchEventActivity extends Activity {
         layoutLv1 = findViewById(R.id.rl_lv1_dispatch_touch_event);
         layoutLv2 = findViewById(R.id.rl_lv2_dispatch_touch_event);
         button = findViewById(R.id.btn_dispatch_touch_event);
+        button2 = findViewById(R.id.btn_dispatch_touch_event_2);
         layoutLv1.name = "rl_lv1";
         layoutLv2.name = "rl_lv2";
         button.name = "button";
+        button2.name = "button2";
     }
 
     @SuppressLint("ClickableViewAccessibility")
@@ -79,6 +82,26 @@ public class DispatchTouchEventActivity extends Activity {
                         break;
                     default:
                         Log.i(button.name, "其他事件--------------");
+                        bool = false;
+                        break;
+                }
+                return bool;
+            }
+        });
+
+        button2.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                boolean bool = true;
+                switch (motionEvent.getAction()) {
+                    case ACTION_DOWN:
+                        Log.i(button2.name, "消费按下事件----------");
+                        break;
+                    case ACTION_UP:
+                        Log.i(button2.name, "消费松开事件----------");
+                        break;
+                    default:
+                        Log.i(button2.name, "其他事件--------------");
                         bool = false;
                         break;
                 }
