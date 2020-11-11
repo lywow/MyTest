@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_alpha_static"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="启动Alpha_Standard_static"/>
+
+    <Button
+        android:id="@+id/btn_alpha_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="启动Alpha_Standard_dynamic"/>
+
+    <Button
+        android:id="@+id/btn_bravo_static"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="启动Bravo_SingleTop_static"/>
+
+    <Button
+        android:id="@+id/btn_bravo_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="启动Bravo_SingleTop_dynamic"/>
+
+    <Button
+        android:id="@+id/btn_charlie_static"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="启动Bravo_SingleTop_dynamic"/>
+
+    <Button
+        android:id="@+id/btn_bravo_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="启动Bravo_SingleTop_dynamic"/>
+
+    <Button
+        android:id="@+id/btn_bravo_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="启动Bravo_SingleTop_dynamic"/>
+
+    <Button
+        android:id="@+id/btn_bravo_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="启动Bravo_SingleTop_dynamic"/>
+
+</LinearLayout>

@@ -10,6 +10,8 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import com.lywow.mytest.dispatchTouchEvent.DispatchTouchEventActivity;
+import com.lywow.mytest.recyclerview.RecycleActivity;
+import com.lywow.mytest.recyclerview.RecycleAdapter;
 import com.lywow.mytest.testLifeActivity.TestLifeActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void initView() {
         findViewById(R.id.tv_dispatch_touch_event).setOnClickListener(this);
         findViewById(R.id.tv_test_life_activity).setOnClickListener(this);
+        findViewById(R.id.tv_test_recycle_view).setOnClickListener(this);
     }
 
     @Override
@@ -37,6 +40,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_test_life_activity:
                 startActivity(new Intent(this, TestLifeActivity.class));
+                break;
+            case R.id.tv_test_recycle_view:
+                startActivity(new Intent(this, RecycleActivity.class));
                 break;
             default:
                 break;

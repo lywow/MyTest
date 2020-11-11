@@ -19,4 +19,11 @@
         android:gravity="center"
         android:text="testLifeActivity"/>
 
+    <TextView
+        android:id="@+id/tv_test_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="testRecycleViewActivity"/>
+
 </LinearLayout>

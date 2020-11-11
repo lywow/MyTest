@@ -19,6 +19,7 @@
 
         <activity android:name=".dispatchTouchEvent.DispatchTouchEventActivity"/>
         <activity android:name=".testLifeActivity.TestLifeActivity"/>
+        <activity android:name=".recyclerview.RecycleActivity"/>
 
         <service android:name=".serviceTest.BindTestService" />
     </application>
