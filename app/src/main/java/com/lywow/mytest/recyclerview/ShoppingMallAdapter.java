@@ -1,13 +1,10 @@
 package com.lywow.mytest.recyclerview;
 
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,12 +13,12 @@ import com.lywow.mytest.R;
 
 import java.util.List;
 
-public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.RecycleAdapterHolder> {
+public class ShoppingMallAdapter extends RecyclerView.Adapter<ShoppingMallAdapter.RecycleAdapterHolder> {
     private Context mContext;
-    private List<Commodity> mCommodityList;
+    private List<CommodityBean> mCommodityList;
     private View inflater;
 
-    public RecycleAdapter(Context context, List<Commodity> list) {
+    public ShoppingMallAdapter(Context context, List<CommodityBean> list) {
         this.mContext = context;
         this.mCommodityList = list;
     }
@@ -35,7 +32,7 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.RecycleA
 
     @Override
     public void onBindViewHolder(@NonNull RecycleAdapterHolder holder, int position) {//填入数据
-        Commodity commodity = mCommodityList.get(position);
+        CommodityBean commodity = mCommodityList.get(position);
         holder.tvPriceCard.setText(commodity.getPrice() + "元");
         holder.ivBubble.setImageLevel(commodity.getHotLevel());
     }
@@ -48,9 +45,11 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.RecycleA
     static class RecycleAdapterHolder extends RecyclerView.ViewHolder {
         TextOutlineView tvPriceCard;
         ImageView ivBubble;
+        static int x = 1;
 
         public RecycleAdapterHolder(View itemView) {
             super(itemView);
+
             tvPriceCard = itemView.findViewById(R.id.tv_shopping_mall_price_card);
             ivBubble = itemView.findViewById(R.id.iv_bubble_for_commodity);
         }

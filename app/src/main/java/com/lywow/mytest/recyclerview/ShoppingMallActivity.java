@@ -11,11 +11,11 @@ import com.lywow.mytest.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecycleActivity extends Activity {
+public class ShoppingMallActivity extends Activity {
 
     private RecyclerView mRecyclerView;
-    private List<Commodity> mData;
-    private RecycleAdapter mAdapter;
+    private List<CommodityBean> mData;
+    private ShoppingMallAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,16 +26,16 @@ public class RecycleActivity extends Activity {
 
         mRecyclerView = (RecyclerView) findViewById(R.id.id_recyclerview);
         mRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));
-        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(getResources().getDrawable(R.drawable.img_shopping_mall_goods_shelf));
+        CommodityItemDecoration dividerItemDecoration = new CommodityItemDecoration(getResources().getDrawable(R.drawable.img_shopping_mall_goods_shelf));
         mRecyclerView.addItemDecoration(dividerItemDecoration);
-        mRecyclerView.setAdapter(mAdapter = new RecycleAdapter(this, mData));
+        mRecyclerView.setAdapter(mAdapter = new ShoppingMallAdapter(this, mData));
 
     }
 
     protected void initData() {
         mData = new ArrayList<>();
         for (int i = 0; i < 21; i++) {
-            Commodity commodity = new Commodity();
+            CommodityBean commodity = new CommodityBean();
             commodity.setHotLevel(i % 4);
             commodity.setPrice((i % 4 + 1) * 356);
             mData.add(commodity);

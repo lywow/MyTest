@@ -6,12 +6,12 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class DividerItemDecoration extends RecyclerView.ItemDecoration {
+public class CommodityItemDecoration extends RecyclerView.ItemDecoration {
 
     private Drawable mDivider;
 
 
-    public DividerItemDecoration(Drawable drawable) {
+    public CommodityItemDecoration(Drawable drawable) {
         mDivider = drawable;
     }
 

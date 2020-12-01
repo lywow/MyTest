@@ -1,16 +1,11 @@
 package com.lywow.mytest.recyclerview;
 
-import android.view.View;
-
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
-public class Commodity {
+public class CommodityBean {
 
     private int hotLevel;
     private int price;
 
-    public Commodity(){}
+    public CommodityBean(){}
 
     public int getHotLevel() {
         return hotLevel;

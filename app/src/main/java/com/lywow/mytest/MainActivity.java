@@ -6,12 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import com.lywow.mytest.dispatchTouchEvent.DispatchTouchEventActivity;
-import com.lywow.mytest.recyclerview.RecycleActivity;
-import com.lywow.mytest.recyclerview.RecycleAdapter;
+import com.lywow.mytest.jsonTest.JsonTestActivity;
+import com.lywow.mytest.recyclerview.ShoppingMallActivity;
 import com.lywow.mytest.testLifeActivity.TestLifeActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -29,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.tv_dispatch_touch_event).setOnClickListener(this);
         findViewById(R.id.tv_test_life_activity).setOnClickListener(this);
         findViewById(R.id.tv_test_recycle_view).setOnClickListener(this);
+        findViewById(R.id.tv_test_json).setOnClickListener(this);
     }
 
     @Override
@@ -42,7 +42,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this, TestLifeActivity.class));
                 break;
             case R.id.tv_test_recycle_view:
-                startActivity(new Intent(this, RecycleActivity.class));
+                startActivity(new Intent(this, ShoppingMallActivity.class));
+                break;
+            case R.id.tv_test_json:
+                startActivity(new Intent(this, JsonTestActivity.class));
                 break;
             default:
                 break;

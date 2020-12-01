@@ -26,4 +26,11 @@
         android:gravity="center"
         android:text="testRecycleViewActivity"/>
 
+    <TextView
+        android:id="@+id/tv_test_json"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="testJsonActivity"/>
+
 </LinearLayout>

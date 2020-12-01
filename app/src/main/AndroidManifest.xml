@@ -19,7 +19,8 @@
 
         <activity android:name=".dispatchTouchEvent.DispatchTouchEventActivity"/>
         <activity android:name=".testLifeActivity.TestLifeActivity"/>
-        <activity android:name=".recyclerview.RecycleActivity"/>
+        <activity android:name=".recyclerview.ShoppingMallActivity"/>
+        <activity android:name=".jsonTest.JsonTestActivity"/>
 
         <service android:name=".serviceTest.BindTestService" />
     </application>
